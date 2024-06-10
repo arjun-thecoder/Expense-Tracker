@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80vw;
+    /* max-width: 600px; */
+    text-align: center;
+    height: 80vh;
+    overflow: auto;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.summary {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.summary-item {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.summary-item h2 {
+    margin: 0 0 10px;
+}
+
+.summary-item p {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+form input, form select, form button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+form button {
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+.transaction-list {
+    list-style: none;
+    padding: 0;
+}
+
+.transaction-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.transaction-item .delete-button {
+    border: none;
+    background-color: #ff3b30;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.transaction-item .delete-button:hover {
+    background-color: #cc2b25;
+}
+
+@media screen and (max-width: 700px) {
+    .summary, #transaction-form{
+        flex-direction: column;
+    }
+}
